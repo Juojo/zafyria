@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+}
+
+/* --- NAVBAR (general, solo si usás clases propias, si no, solo Bootstrap) --- */
+
+/* --- FOOTER --- */
+.footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 24px 0 20px 0;
+    margin-top: 48px;
+    font-size: 1.05em;
+    letter-spacing: 0.5px;
+}
+
+.wrapper-footer {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+/* ...podés dejar aquí otros estilos generales reutilizables... */

@@ -1,0 +1,27 @@
+main h1 {
+    color: #ff9800;
+    font-weight: bold;
+    margin-bottom: 32px;
+}
+
+.carousel-inner img,
+.carousel-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+}
+
+.carousel-caption {
+    background: rgba(34,34,34,0.7);
+    border-radius: 8px;
+    padding: 16px;
+}
+
+@media (max-width: 900px) {
+    .carousel-inner img,
+    .carousel-item img {
+        height: 250px;
+    }
+}
