@@ -4,9 +4,6 @@ body {
     background: #f7f7f7;
 }
 
-/* --- NAVBAR (general, solo si usás clases propias, si no, solo Bootstrap) --- */
-
-/* --- FOOTER --- */
 .footer {
     background: #222;
     color: #fff;
@@ -22,5 +19,3 @@ body {
     margin: 0 auto;
     padding: 0 16px;
 }
-
-/* ...podés dejar aquí otros estilos generales reutilizables... */
