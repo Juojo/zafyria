@@ -117,6 +117,21 @@ nav {
     border-radius: 6px;
     box-shadow: 0 1px 6px rgba(0,0,0,0.08);
 }
+.footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 24px 0 20px 0;
+    margin-top: 48px;
+    font-size: 1.05em;
+    letter-spacing: 0.5px;
+}
+
+.wrapper-footer {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
 @media (max-width: 900px) {
     .contenedor-encabezado,
     .seccion-informacion,
