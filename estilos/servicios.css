@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.servicios {
+    max-width: 400px;
+    width: 100%;
+}
+
+.titulo {
+    background-color: #cfe8fc;
+    padding: 10px;
+    font-size: 1.8em;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+.tarjeta {
+    background-color: #ffe189;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: scale(1.03);
+}
+
+.tarjeta i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    display: block;
+    color: #444;
+}
+
+.tarjeta p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+
+@media (max-width: 480px) {
+    .titulo {
+        font-size: 1.5em;
+    }
+
+    .tarjeta {
+        padding: 15px;
+    }
+
+    .tarjeta i {
+        font-size: 1.8em;
+    }
+
+    .tarjeta p {
+        font-size: 1em;
+    }
+}
