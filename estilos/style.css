@@ -1,3 +1,13 @@
+:root {
+    --primary-color: #f57a60;
+    --secondary-color: #422D96;
+    --text-color: #333;
+    --light-bg: #f5f6fa;
+    --white: #ffffff;
+    --shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;

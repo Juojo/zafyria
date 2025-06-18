@@ -1,9 +1,12 @@
 .banner-principal {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
-    color: #fff;
-    height: 350px;
+    /* background-image: url(../img/banner.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+    background-color: #a4d8f3;
+    height: 650px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -12,9 +15,21 @@
     font-size: 3em;
     margin: 0;
 }
-.banner-principal p {
-    font-size: 1.5em;
-    margin-top: 10px;
+.titulo-banner {
+    width: 60%;
+    font-size: 2.5em;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+.titulo-banner h1 {
+    font-family: 'Merriweather', serif, Arial;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+.logo-zafyria {
+    width: 50rem;
+    height: auto;
+    margin-right: 20px;
 }
 .boton {
     margin-top: 25px;
@@ -22,8 +37,8 @@
     font-size: 1.1em;
     border: none;
     border-radius: 4px;
-    background: #ff9800;
-    color: #fff;
+    background: var(--primary-color);
+    color: var(--white);
     cursor: pointer;
     transition: background 0.3s;
     text-decoration: none;
