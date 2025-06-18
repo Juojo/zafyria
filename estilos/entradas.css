@@ -1,0 +1,16 @@
+.formulario-pago {
+    max-width: 500px;
+    margin: 0 auto;
+}
+.promociones {
+    border-left: 4px solid #ff9800;
+}
+.promociones h2 {
+    color: #ff9800;
+}
+@media (max-width: 991px) {
+    .formulario-pago, .promociones {
+        max-width: 100%;
+        margin-bottom: 24px;
+    }
+}
