@@ -24,11 +24,11 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
     return;
   }
 
-  // if (!emailRegex.test(email)) {
-  //   mensajeValidacion.textContent = 'Ingresá un correo electrónico válido.';
-  //   mensajeValidacion.className = 'alert alert-danger';
-  //   return;
-  // }
+  if (!emailRegex.test(email)) {
+    mensajeValidacion.textContent = 'Ingresá un correo electrónico válido.';
+    mensajeValidacion.className = 'alert alert-danger';
+    return;
+  }
 
   if (email !== confirmEmail) {
     mensajeValidacion.textContent = 'Los correos no coinciden.';
