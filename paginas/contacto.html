@@ -33,6 +33,9 @@
                         <li class="nav-item">
                             <a class="nav-link active" href="contacto.html">Contacto</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="preguntasfrec.html">Preguntas Frecuentes</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -42,32 +45,60 @@
         <h1 id="contacto">Contacto</h1>
         <h2 id="mensaje">Dejanos tú mensaje</h2>
 
-        <div  class="formulario">
-         <form class="formulario2" action="/action_page.php">
-              <label for="nombre">Nombre:</label><br>
-              <input type="text" id="nombre" name="nombre" value=""><br>
+<div class="contact-form-container">
+  <div class="row align-items-center">
+    <div class="col-md-6">
+      <form id="contact-form" novalidate>
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre:</label>
+          <input type="text" class="form-control input-nombre" id="nombre" required>
+        </div>
 
-              <label for="apellido">Apellido:</label><br>
-              <input type="text" id="apellido" name="apellido" value=""><br>
+        <div class="mb-3">
+          <label for="apellido" class="form-label">Apellido:</label>
+          <input type="text" class="form-control input-apellido" id="apellido" required>
+        </div>
 
-              <label for="correo">E-mail:</label><br>
-              <input type="text" id="correo" name="correo" value=""><br>
+        <div class="mb-3">
+          <label for="correo" class="form-label">E-mail:</label>
+          <input type="email" class="form-control input-email" id="correo" required>
+        </div>
 
-              <label for="confirma tu correo">Confirma tu correo:</label><br>
-              <input type="text" id="confirma_email" name="confirma_email" value=""><br>
+        <div class="mb-3">
+          <label for="confirma_email" class="form-label">Confirmá tu correo:</label>
+          <input type="email" class="form-control input-confirm-email" id="confirma_email" required>
+        </div>
 
-              <label for="telefono">Teléfono:</label><br>
-              <input type="text" id="telefono" name="telefono" value=""><br>
+        <div class="mb-3">
+          <label for="telefono" class="form-label">Teléfono:</label>
+          <input type="tel" class="form-control input-telefono" id="telefono" pattern="[0-9]+" required>
+        </div>
 
-              <label for="mensaje">Consulta:</label><br>
-                           <textarea name="message" rows="10" cols="30">Mensaje </textarea>
-              <br>             
-              <input type="submit" value="Enviar">
+        <div class="mb-3">
+          <label for="consulta" class="form-label">Consulta:</label>
+          <textarea class="form-control input-consulta" id="consulta" rows="4" required></textarea>
+        </div>
 
-            </form> 
-            <img src="../img/fotoformulario.jpg" alt="imgconsulta" id="imgconsulta"> 
-        </div>     
-    </main>
-        <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="d-grid gap-2">
+          <button type="submit" class="btn btn-primary btn-enviar">Enviar</button>
+        </div>
+
+        <div id="mensaje-validacion" class="mt-3"></div>
+      </form>
+    </div>
+
+    <div class="col-md-6 text-center">
+      <img src="../img/fotoformulario.jpg" alt="Imagen de consulta" class="img-fluid form-image rounded shadow">
+    </div>
+  </div>
+</div>
+
+</div>
+</main>
+
+    <script src="/zafyria-master/jscript.js/formulario.js"></script>
+
+    <footer class="bg-dark text-white text-center py-4 mt-5">
         <p class="mb-0">© 2025 Zafyria. Todos los derechos reservados.</p>
-    </footer>
+    </footer> 
+</body>
