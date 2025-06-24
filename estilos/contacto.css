@@ -1,12 +1,9 @@
-/* Tipografía sugerida */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 body {
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(to right, #e3eafc, #fce1f1);
 }
 
-/* Títulos */
 #contacto {
   color: #5d2c98;
   font-size: 48px;
@@ -15,13 +12,12 @@ body {
 }
 
 #mensaje {
-  color: #7e3794;
+  color: #e61d49e3;
   font-size: 30px;
   text-align: center;
   margin-bottom: 30px;
 }
 
-/* Contenedor general del formulario */
 .contact-form-container {
   background-color: #fff;
   padding: 30px;
@@ -31,7 +27,6 @@ body {
   max-width: 900px;
 }
 
-/* Formulario */
 #contact-form {
   background-color: #f2f0ff;
   padding: 20px;
@@ -41,7 +36,7 @@ body {
 
 #contact-form .form-label {
   font-weight: 600;
-  color: #5d2c98;
+  color: #050505;
 }
 
 #contact-form .form-control {
@@ -55,7 +50,6 @@ body {
   box-shadow: 0 0 5px rgba(125, 54, 184, 0.3);
 }
 
-/* Botón */
 .btn-enviar {
   background-color: #7e3794;
   border: none;
@@ -67,10 +61,15 @@ body {
 }
 
 .btn-enviar:hover {
-  background-color: #a152be;
+  background-color: #fce1f1;
 }
 
-/* Imagen decorativa */
+footer.bg-dark {
+  background-color: var(--primary-color) !important;
+  color: var(--white) !important;
+  font-size: 1rem;
+}
+
 .form-image {
   width: 100%;
   max-width: 500px;
@@ -79,7 +78,6 @@ body {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* Mensaje de validación */
 #mensaje-validacion {
   font-weight: bold;
   margin-top: 10px;
