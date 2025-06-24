@@ -1,0 +1,57 @@
+.preguntas-frecuentes {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 5px;
+  background: #3333340f;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.preguntas-frecuentes h2 {
+  font-size:40px;
+  margin-bottom: 1.5rem;
+  color: #241c44;
+  text-align: center;
+}
+
+.preguntas-frecuentes details {
+  margin-bottom: 1rem;
+  border: 1px solid #1027d8;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.preguntas-frecuentes summary {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #422d96;
+}
+
+.preguntas-frecuentes p {
+  margin-top: 0.5rem;
+  color: #444;
+  font-size: 15px;
+}
+
+/* BOTÓN DE CONTACTO */
+.contacto {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.boton-contacto {
+  background-color: #422d96;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.boton-contacto:hover {
+  background-color: #005a9e;
+}
