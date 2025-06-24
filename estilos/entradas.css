@@ -1,15 +1,44 @@
 .formulario-pago {
     max-width: 500px;
     margin: 0 auto;
+    background-color: var(--white);
+    border-left: 6px solid var(--primary-color);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
 }
+main h1 {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.formulario-pago:hover {
+    transform: scale(1.01);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
 .promociones {
-    border-left: 4px solid #ff9800;
+    border-left: 6px solid var(--accent-color);
+    background-color: var(--highlight-bg);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
 }
+
 .promociones h2 {
-    color: #ff9800;
+    color: var(--accent-color);
+    font-weight: 600;
 }
+
+.promociones li {
+    line-height: 1.6;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
 @media (max-width: 991px) {
-    .formulario-pago, .promociones {
+    .formulario-pago,
+    .promociones {
         max-width: 100%;
         margin-bottom: 24px;
     }
