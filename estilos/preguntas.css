@@ -6,6 +6,11 @@
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
+main h1 {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
 
 .preguntas-frecuentes h2 {
   font-size:40px;
@@ -35,7 +40,6 @@
   font-size: 15px;
 }
 
-/* BOTÓN DE CONTACTO */
 .contacto {
   text-align: center;
   margin-top: 2rem;
@@ -54,4 +58,9 @@
 
 .boton-contacto:hover {
   background-color: #005a9e;
+}
+footer.bg-dark {
+  background-color: var(--primary-color) !important;
+  color: var(--white) !important;
+  font-size: 1rem;
 }
