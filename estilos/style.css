@@ -1,21 +1,24 @@
 :root {
-    --primary-color: #f57a60;
-    --secondary-color: #422D96;
-    --text-color: #333;
-    --light-bg: #f5f6fa;
-    --white: #ffffff;
-    --shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-    --transition: all 0.3s ease;
+    --primary-color: #5d2c98;          
+    --secondary-color: #a4d8f3;        
+    --highlight-bg: #fce1f1;          
+    --accent-color: #ffa500;           
+    --text-color: #333;                
+    --white: #ffffff;                  
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --transition: all 0.3s ease-in-out;
 }
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom right, var(--secondary-color), var(--white));
+    color: var(--text-color);
 }
 
 .footer {
-    background: #222;
-    color: #fff;
+    background: var(--primary-color);
+    color: var(--white);
     text-align: center;
     padding: 24px 0 20px 0;
     margin-top: 48px;
@@ -27,4 +30,43 @@ body {
     max-width: 900px;
     margin: 0 auto;
     padding: 0 16px;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+
+button, .boton {
+    background-color: var(--accent-color);
+    color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+button:hover, .boton:hover {
+    background-color: #fce1f1;
+}
+
+.section {
+    background-color: var(--white);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 1000px;
+}
+
+h1, h2 {
+    color: var(--primary-color);
+    text-align: center;
 }
