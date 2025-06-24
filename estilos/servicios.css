@@ -1,70 +1,116 @@
+:root {
+  --primary-color: #5d2c98;
+  --secondary-color: #a4d8f3;
+  --highlight-bg: #fce1f1;
+  --accent-color: #00ffee;
+  --text-color: #333333;
+  --white: #ffffff;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease-in-out;
+}
+
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #1e1e1e;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 20px;
+  background: linear-gradient(to bottom right, var(--secondary-color), var(--highlight-bg));
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
 }
 
-.servicios {
-    max-width: 400px;
-    width: 100%;
+main.container {
+  max-width: 1200px;
 }
 
-.titulo {
-    background-color: #cfe8fc;
-    padding: 10px;
-    font-size: 1.8em;
-    text-align: center;
-    border-radius: 8px;
-    margin-bottom: 25px;
+main h1 {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  user-select: none;
 }
 
-.tarjeta {
-    background-color: #ffe189;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
+main p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 3rem auto;
+  color: var(--text-color);
 }
 
-.tarjeta:hover {
-    transform: scale(1.03);
+.card {
+  border: none;
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  background-color: var(--white);
+  transition: var(--transition);
+  cursor: default;
+  border-left: 6px solid var(--primary-color);
 }
 
-.tarjeta i {
-    font-size: 2em;
-    margin-bottom: 10px;
-    display: block;
-    color: #444;
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
 }
 
-.tarjeta p {
-    margin: 0;
-    font-weight: bold;
-    font-size: 1.1em;
+.card-img-top {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  height: 200px;
+  object-fit: cover;
 }
 
+.card-title {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: var(--text-color);
+  line-height: 1.4;
+}
+
+footer.bg-dark {
+  background-color: var(--primary-color) !important;
+  color: var(--white) !important;
+  font-size: 1rem;
+}
+
+
+@media (max-width: 768px) {
+  main h1 {
+    font-size: 2rem;
+  }
+
+  main p {
+    font-size: 1.1rem;
+  }
+
+  .card {
+    border-left-width: 4px;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  .card-text {
+    font-size: 0.95rem;
+  }
+}
 
 @media (max-width: 480px) {
-    .titulo {
-        font-size: 1.5em;
-    }
+  main h1 {
+    font-size: 1.8rem;
+  }
 
-    .tarjeta {
-        padding: 15px;
-    }
+  main p {
+    font-size: 1rem;
+  }
 
-    .tarjeta i {
-        font-size: 1.8em;
-    }
-
-    .tarjeta p {
-        font-size: 1em;
-    }
+  .card-img-top {
+    height: 160px;
+  }
 }
